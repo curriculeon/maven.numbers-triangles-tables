@@ -15,12 +15,12 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        StringBuilder str = new StringBuilder();
-        for (int row = 0; row < 4; row++) str.append("*".repeat(row + 1)).append("\n");
-        return str.toString();    }
+        
+        return getTriangle(5);    
+    }
 
     public static String getLargeTriangle() {
-        StringBuilder str = new StringBuilder();
-        for (int row = 0; row < 9; row++) str.append("*".repeat(row + 1)).append("\n");
-        return str.toString();    }
+       
+        return getTriangle(10);    
+    }
 }
