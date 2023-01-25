@@ -8,7 +8,7 @@ public class TriangleUtilities {
      */
     public static String getTriangle(int numberOfRows) {
         StringBuilder str = new StringBuilder();
-        for (int row = 0; row < numberOfRows-1; row++) str.append("*".repeat(row + 1)).append("\n");
+        for (int row = 1; row < numberOfRows; row++) str.append(getRow(row)).append("\n");
         return str.toString();
     }
 
