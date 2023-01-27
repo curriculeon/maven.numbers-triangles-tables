@@ -5,7 +5,7 @@ public class TriangleUtilities {
     public static String getTriangle(int numberOfRows) {
         StringBuilder ans = new StringBuilder();
         for (int num = 1; num <numberOfRows; num++){
-            ans.append("*".repeat(num));
+            ans.append(getRow(num));
             ans.append("\n");
         }
         return ans.toString();
@@ -20,20 +20,11 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        StringBuilder ans = new StringBuilder();
-        for (int num = 1; num <=4; num++){
-            ans.append("*".repeat(num));
-            ans.append("\n");
-        }
-        return ans.toString();
+
+        return getTriangle(5);
     }
 
     public static String getLargeTriangle() {
-        StringBuilder ans = new StringBuilder();
-        for (int num = 1; num <10; num++){
-            ans.append("*".repeat(num));
-            ans.append("\n");
-        }
-        return ans.toString();
+        return getTriangle(10);
     }
 }

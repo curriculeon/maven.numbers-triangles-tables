@@ -24,35 +24,19 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        StringBuilder ans = new StringBuilder();
-        for (int num = start; num < stop; num+=step){
-                ans.append((int)Math.pow(num, 2));
-        }
-        return ans.toString();
+        return getExponentiations(start, stop,step, 2);
     }
 
     public static String getRange(int stop) {
-        StringBuilder ans = new StringBuilder();
-        for (int num = 0; num < stop; num++){
-            ans.append(num);
-        }
-        return ans.toString();
+        return getExponentiations(0, stop,1, 1);
     }
 
     public static String getRange(int start, int stop) {
-        StringBuilder ans = new StringBuilder();
-        for (int num = start; num < stop; num++){
-            ans.append(num);
-        }
-        return ans.toString();
+        return getExponentiations(start, stop,1, 1);
     }
 
     public static String getRange(int start, int stop, int step) {
-        StringBuilder ans = new StringBuilder();
-        for (int num = start; num < stop; num+=step){
-            ans.append(num);
-        }
-        return ans.toString();
+        return getExponentiations(start, stop,step, 1);
     }
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
