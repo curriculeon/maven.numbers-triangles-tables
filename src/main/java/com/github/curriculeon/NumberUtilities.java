@@ -2,6 +2,7 @@ package com.github.curriculeon;
 
 
 public class NumberUtilities {
+    
     /**
      * @param start
      * @param stop
@@ -14,7 +15,6 @@ public class NumberUtilities {
         return ans;
     }
 
-
     /**
      * @param start
      * @param stop
@@ -26,7 +26,6 @@ public class NumberUtilities {
             if(i % 2 != 0) ans += i;
         return ans;
     }
-
 
     /**
      * @param start
@@ -49,7 +48,6 @@ public class NumberUtilities {
      */
     public static String getRange(int start, int stop) {return getRange(start,stop,1);}
 
-
     /**
      * @param start
      * @param stop
@@ -61,7 +59,6 @@ public class NumberUtilities {
         for(int i = start; i < stop; i+=step) ans += i;
         return ans;
     }
-
 
     /**
      * @param start

@@ -2,6 +2,16 @@ package com.github.curriculeon;
 
 public class TriangleUtilities {
 
+/**
+     * @param numberOfStars
+     * @return
+     */
+    public static String getRow(int numberOfStars) {
+        StringBuilder ans = new StringBuilder();
+        ans.append("*".repeat(numberOfStars));
+        return "*".repeat(numberOfStars);
+    }
+
     /**
      * @param numberOfRows
      * @return
@@ -13,26 +23,12 @@ public class TriangleUtilities {
     }
 
     /**
-     * @param numberOfStars
      * @return
      */
-    public static String getRow(int numberOfStars) {
-        String ans = "";
-        for(int i = 0; i < numberOfStars; i++) ans += "*";
-        return ans;
-    }
+    public static String getSmallTriangle() {return getTriangle(5);}
 
     /**
      * @return
      */
-    public static String getSmallTriangle() {
-        return getTriangle(5);    
-    }
-
-    /**
-     * @return
-     */
-    public static String getLargeTriangle() {
-        return getTriangle(10);    
-    }
+    public static String getLargeTriangle() {return getTriangle(10);}
 }
