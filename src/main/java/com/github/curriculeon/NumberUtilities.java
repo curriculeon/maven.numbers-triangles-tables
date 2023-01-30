@@ -20,7 +20,7 @@ public class NumberUtilities {
 
     public static String getSquareNumbers(int start, int stop, int step) {
         String bob = "";
-        for(int i = start; i < stop; i++)
+        for(int i = start; i < stop; i+= step)
             bob += i*i;
         return bob;
 
@@ -35,19 +35,23 @@ public class NumberUtilities {
 
     public static String getRange(int start, int stop) {
         String Collector = "";
-        for (int i = start; i < stop; i++) Collector +=1;
+        for (int i = start; i < stop; i++) Collector +=i;
         return Collector;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-
-        return null;
+        String Ranger = "";
+        for(int i = start; i < stop; i += step) Ranger += i;
+        return Ranger;
     }
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-
-        return null;
+        String Expo = "";
+        for(int i = start; i < stop; i+= step){
+            Expo += (int) Math.pow(i , exponent);
+        }
+        return Expo;
     }
 }
