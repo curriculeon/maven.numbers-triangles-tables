@@ -6,21 +6,21 @@ public class TriangleUtilities {
         String result = "";
         for (int i = 0; i < numberOfRows; i++){
             result += getRow(i);
-            result += "\n";
+            result +="\n";
         }
         return result.stripLeading();
     }
 
     public static String getRow(int numberOfStars) {
-        String result = "";
-        for(int i = 0; i< numberOfStars; i++){
-            result += "*";
+        String result ="";
+        for (int i = 0; i< numberOfStars; i++){
+            result +="*";
         }
         return result;
     }
 
     public static String getSmallTriangle() {
-       return getTriangle(4);
+       return getTriangle(5);
     }
 
     public static String getLargeTriangle() {
