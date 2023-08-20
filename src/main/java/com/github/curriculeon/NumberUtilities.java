@@ -17,11 +17,19 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start) {
-        return null;
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < start; i++) {
+            result.append(i);
+        }
+        return result.toString();
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        StringBuilder result = new StringBuilder();
+        for (int i = start; i < stop; i++) {
+            result.append(i);
+        }
+        return result.toString();
     }
 
 
